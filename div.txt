@@ -1,0 +1,21 @@
+int DivisibleByEight(string s){
+        int n,n1;
+        n=s.length();
+        if(n>=3)
+        {
+            s=s.substr(n-3,3);  
+            n1=stoi(s);
+            if(n1%8==0)
+            return 1;
+            else
+            return -1;
+        }
+        else
+        {
+            n1=stoi(s);
+            if(n1%8==0)
+            return 1;
+            else
+            return -1;
+        }
+    }
